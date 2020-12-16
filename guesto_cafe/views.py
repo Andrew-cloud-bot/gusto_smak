@@ -1,5 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def hello(request):
-    return render(request, 'index.html')
+def get_main_page(request):
+    context = {'title': 'Кафе Смак',
+               'about_title': 'Наша історія'
+               }
+    return render(request, 'index.html', context=context)

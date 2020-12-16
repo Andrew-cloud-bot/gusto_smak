@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gusto</title>
+<title>{{ title }}</title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -33,7 +33,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<section id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
@@ -46,11 +46,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#features" class="page-scroll">Specials</a></li>
-        <li><a href="#about" class="page-scroll">About</a></li>
-        <li><a href="#restaurant-menu" class="page-scroll">Menu</a></li>
-        <li><a href="#team" class="page-scroll">Chef</a></li>
-        <li><a href="#contact" class="page-scroll">Contact</a></li>
+        <li><a href="#features" class="page-scroll">Фірмові страви</a></li>
+        <li><a href="#about" class="page-scroll">Хто ми</a></li>
+        <li><a href="#restaurant-menu" class="page-scroll">Меню</a></li>
+        <li><a href="#team" class="page-scroll">Шеф</a></li>
+        <li><a href="#contact" class="page-scroll">Зв'язок з нами</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -63,8 +63,8 @@
       <div class="container">
         <div class="row">
           <div class="intro-text">
-            <h1>Gusto</h1>
-            <p>Reservations: (887) 654-3210</p>
+            <h1>Смак</h1>
+            <p>Зарезервувати стіл: (555) 328-5010</p>
           </div>
         </div>
       </div>
@@ -72,258 +72,116 @@
   </div>
 </header>
 <!-- Features Section -->
-<div id="features" class="text-center">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our Specials</h2>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
-          <h3>Lorem ipsum dolor</h3>
-          <img src="img/specials/1.jpg" class="img-responsive" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
-          <h3>Consectetur adipiscing</h3>
-          <img src="img/specials/2.jpg" class="img-responsive" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
-          <h3>Duis sed dapibus</h3>
-          <img src="img/specials/3.jpg" class="img-responsive" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% block menu_features %}
+    {% include 'menu_features.html' %}
+{% endblock %}
 <!-- About Section -->
-<div id="about">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 about-img"> </div>
-      <div class="col-xs-12 col-md-3 col-md-offset-1">
-        <div class="about-text">
-          <div class="section-title">
-            <h2>Our Story</h2>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% block about_guesto %}
+    {% include 'about_guesto.html' %}
+{% endblock %}
 <!-- Restaurant Menu Section -->
-<div id="restaurant-menu">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>Menu</h2>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="menu-section">
-          <h2 class="menu-section-title">Breakfast & Starters</h2>
-          <div class="menu-item">
-            <div class="menu-item-name">Tortellini Skewers</div>
-            <div class="menu-item-price"> $9 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Fried Ravioli</div>
-            <div class="menu-item-price"> $7 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Wild Mushroom Arancini</div>
-            <div class="menu-item-price"> $9 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Mozzarella Sticks</div>
-            <div class="menu-item-price"> $10 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="menu-section">
-          <h2 class="menu-section-title">Main Course</h2>
-          <div class="menu-item">
-            <div class="menu-item-name">Roast Stuffed Chicken</div>
-            <div class="menu-item-price"> $18 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Chicken & Mushroom Pasta</div>
-            <div class="menu-item-price"> $20 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Beef Lasagne</div>
-            <div class="menu-item-price"> $14 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Chicken Goujons</div>
-            <div class="menu-item-price"> $19 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <div class="menu-section">
-          <h2 class="menu-section-title">Dinner</h2>
-          <div class="menu-item">
-            <div class="menu-item-name">Sesame-Ginger Beef</div>
-            <div class="menu-item-price"> $15 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Crispy Fried Chicken</div>
-            <div class="menu-item-price"> $17 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Mongolian Shrimp & Broccoli</div>
-            <div class="menu-item-price"> $18 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam.. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Spicy Coconut Salmon</div>
-            <div class="menu-item-price"> $20 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="menu-section">
-          <h2 class="menu-section-title">Desserts</h2>
-          <div class="menu-item">
-            <div class="menu-item-name">Chocolate Mud Cake</div>
-            <div class="menu-item-price"> $11 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Bourbon-Pecan Tart</div>
-            <div class="menu-item-price"> $14 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Texas Sheet Cake</div>
-            <div class="menu-item-price"> $15 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-name">Vanilla Cheesecake</div>
-            <div class="menu-item-price"> $18 </div>
-            <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% block menu %}
+    {% include 'menu.html' %}
+{% endblock %}
 <!-- Gallery Section -->
-<div id="gallery">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-6 col-md-3">
-        <div class="gallery-item"> <img src="img/gallery/01.jpg" class="img-responsive" alt=""></div>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <div class="gallery-item"> <img src="img/gallery/02.jpg" class="img-responsive" alt=""></div>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <div class="gallery-item"> <img src="img/gallery/03.jpg" class="img-responsive" alt=""></div>
-      </div>
-      <div class="col-xs-6 col-md-3">
-        <div class="gallery-item"> <img src="img/gallery/04.jpg" class="img-responsive" alt=""></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Team Section -->
-<div id="team">
-  <div class="container">
-    <div id="row">
-      <div class="col-md-6">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="section-title">
-            <h2>Meet Our Chef</h2>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="team-img"><img src="img/chef.jpg" alt="..."></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Contact Section -->
-<div id="contact" class="text-center">
-  <div class="container text-center">
-    <div class="col-md-4">
-      <h3>Reservations</h3>
-      <div class="contact-item">
-        <p>Please call</p>
-        <p>(887) 654-3210</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <h3>Address</h3>
-      <div class="contact-item">
-        <p>4321 California St,</p>
-        <p>San Francisco, CA 12345</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <h3>Opening Hours</h3>
-      <div class="contact-item">
-        <p>Mon-Thurs: 10:00 AM - 11:00 PM</p>
-        <p>Fri-Sun: 11:00 AM - 02:00 AM</p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="section-title text-center">
-      <h3>Send us a message</h3>
-    </div>
-    <div class="col-md-8 col-md-offset-2">
-      <form name="sentMessage" id="contactForm" novalidate>
+<section>
+    <div id="gallery">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="gallery-item"> <img src={% static "img/gallery/01.jpg" %} class="img-responsive" alt=""></div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="gallery-item"> <img src={% static "img/gallery/02.jpg" %} class="img-responsive" alt=""></div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="gallery-item"> <img src={% static "img/gallery/03.jpg" %} class="img-responsive" alt=""></div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="gallery-item"> <img src={% static "img/gallery/04.jpg" %} class="img-responsive" alt=""></div>
           </div>
         </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-      </form>
+      </div>
     </div>
-  </div>
-</div>
+</section>
+<!-- Team Section -->
+<section>
+    <div id="team">
+      <div class="container">
+        <div id="row">
+          <div class="col-md-6">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="section-title">
+                <h2>Зустрічайте шефа</h2>
+              </div>
+              <p>За гастрономічні враження відповідає шеф-кухар Остап Бендер. У меню представлені різноманітні європейські страви, як традиційні, так і авторські. Також наш шеф спільно з метрдотелем можуть скласти індивідуальне меню по вашим бажанням, додавши в нього улюблені вами страви.</p>
+              <p>Колекція вин ресторану «Смак» налічує близько 120 позицій. Від всесвітньо відомих винних будинків до невеликих сімейних виноробства. Коктейльне меню - це ще одна особливість нашого ресторану.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="team-img"><img src={% static "img/chef.jpg" %} alt="..."></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section>
+    <div id="contact" class="text-center">
+      <div class="container text-center">
+        <div class="col-md-4">
+          <h3>Щоб зарезервувати стіл</h3>
+          <div class="contact-item">
+            <p>телефонуйте</p>
+            <p>(555) 328 - 5010</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Наша адреса</h3>
+          <div class="contact-item">
+            <p>вул. Миру 6</p>
+            <p> Нью - Васюки </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3>Відкриті для відвідувачів</h3>
+          <div class="contact-item">
+            <p>Понеділок - Четвер : 10:00 - 23:00 </p>
+            <p>П'ятниця - Неділя : 11:00 - 02:00 </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-title text-center">
+          <h3>Надішліть нам повідомлення</h3>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control" placeholder="Ваше ім'я" required="required">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" placeholder="Пошта" required="required">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Пишіть тут" required></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div id="success"></div>
+            <button type="submit" class="btn btn-custom btn-lg">Надіслати</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
 <div id="footer">
   <div class="container text-center">
     <div class="col-md-6">
@@ -340,11 +198,11 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
-<script type="text/javascript" src="js/bootstrap.js"></script> 
-<script type="text/javascript" src="js/SmoothScroll.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src={% static "js/jquery.1.11.1.js" %}></script>
+<script type="text/javascript" src={% static "js/bootstrap.js" %}></script>
+<script type="text/javascript" src={% static "js/SmoothScroll.js" %}></script>
+<script type="text/javascript" src={% static "js/jqBootstrapValidation.js" %}></script>
+<script type="text/javascript" src={% static "js/contact_me.js" %}></script>
+<script type="text/javascript" src={% static "js/main.js" %}></script>
 </body>
 </html>
