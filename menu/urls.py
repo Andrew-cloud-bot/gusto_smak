@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import categories
+from .views import get_dish_page
 
 urlpatterns = [
-    path('', categories)
+    path('', get_dish_page)
     ]

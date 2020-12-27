@@ -35,81 +35,93 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation==========================================-->
+
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
     </div>
-    
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#features" class="page-scroll">Фірмові страви</a></li>
-        <li><a href="#about" class="page-scroll">Хто ми</a></li>
-        <li><a href="#restaurant-menu" class="page-scroll">Меню</a></li>
-        <li><a href="#team" class="page-scroll">Шеф</a></li>
-        <li><a href="#contact" class="page-scroll">Зв'язок з нами</a></li>
+        <li><a href="javascript:history.back()" class="page-scroll">Повернутися до меню</a></li>
       </ul>
     </div>
-    <!-- /.navbar-collapse --> 
+    <!-- /.navbar-collapse -->
   </div>
 </nav>
+
 <!-- Header -->
 <header id="header">
-  <div class="intro">
+  <div class="banquet">
     <div class="overlay">
       <div class="container">
         <div class="row">
           <div class="intro-text">
-            <h1>Смак</h1>
-            <p>Зарезервувати стіл: (555) 328-5010</p>
+            <h2>{{ dish.category }}</h2>
+            <p></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </header>
-<!-- Features Section -->
-{% block menu_features %}
-    {% include 'menu_features.html' %}
-{% endblock %}
-<!-- About Section -->
-{% block about_guesto %}
-    {% include 'about_guesto.html' %}
-{% endblock %}
-<!-- Restaurant Menu Section -->
-{% block menu %}
-    {% include 'menu.html' %}
-{% endblock %}
-<!-- Gallery Section -->
-{% block gallery %}
-    {% include 'gallery.html' %}
-{% endblock %}
-<!-- Team Section -->
-{% block team %}
-    {% include 'team.html' %}
-{% endblock %}
-<!-- Contact Section -->
-{% block contact_info %}
-    {% include 'contact_info.html' %}
-{% endblock %}
-<div id="footer">
-  <div class="container text-center">
-    <div class="col-md-6">
-      <p>Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a></p>
+
+<section id=back">
+
+</section>
+<section id="dish">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-md-offset-1">
+        <div class="banq-text">
+          <div class="section-title">
+            <h2>{{ dish.title }}</h2>
+          </div>
+          <p>{{ dish.info1 }}</p>
+          <p>{{ dish.info2 }}</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 banq-img"> </div>
     </div>
-    <div class="col-md-6">
-      <div class="social">
-        <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-        </ul>
+  </div>
+</section>
+{% comment %}
+<section id="meeting">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 meet-img"> </div>
+      <div class="col-xs-12 col-md-4 col-md-offset-1">
+        <div class="meet-text">
+          <div class="section-title">
+            <h2>{{ meet_title }}</h2>
+          </div>
+          <p>{{ meet_info_1 }}</p>
+          <p>{{ about_info_1 }}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+<section id="wedding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-md-offset-1">
+        <div class="wedd-text">
+          <div class="section-title">
+            <h2>{{ wedd_title }}</h2>
+          </div>
+          <p>{{ wedd_info_1 }}</p>
+          <p>{{ about_info_1 }}</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 wedd-img"> </div>
+    </div>
+  </div>
+</section>
+{% endcomment %}
 <script type="text/javascript" src={% static "js/jquery.1.11.1.js" %}></script>
 <script type="text/javascript" src={% static "js/bootstrap.js" %}></script>
 <script type="text/javascript" src={% static "js/SmoothScroll.js" %}></script>

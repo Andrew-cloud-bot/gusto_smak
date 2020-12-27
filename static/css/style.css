@@ -31,7 +31,7 @@ h2::after {
 	left: 50%;
 }
 h3 {
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: 400;
 	color: #333;
 }
@@ -131,7 +131,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-color: #FFF;
 }
 .section-title {
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 }
 .section-title .overlay {
 	padding: 80px 0;
@@ -301,20 +301,36 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-	padding: 120px 0;
+	padding: 40px 0;
 }
 #team h2::after {
 	bottom: 0;
 	margin-left: 0;
 	left: 0;
 }
+#team p {
+	line-height: 24px;
+	margin: 0px 0 0px;
+}
 #team img {
-	max-width: 550px;
+	max-width: 400px;
+	
 }
 #team .team-img {
 	display: inline-block;
 	position: relative;
+	height: 370px;
+	max-width: 400px
 }
+#team .anons-img {
+	padding: -20px
+	display: inline-block;
+	position: relative;
+	height: 180px;
+	max-width: 250px
+	margin: 0px auto 0px;
+}
+
 /* Contact Section */
 #contact {
 	padding: 100px 0;
@@ -435,4 +451,111 @@ color: #999;
 }
 #footer a:hover {
 	color: #eee;
+}
+
+/* Banquet Header Section */
+.banquet {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/aa.jpg) center center no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.banquet .overlay {
+	background: rgba(0,0,0,0.4);
+}
+.banquet h1 {
+	font-family: 'Rochester', cursive;
+	color: #fff;
+	font-size: 10em;
+	font-weight: 400;
+	margin-top: 0;
+}
+.banquet span {
+	color: #a7c44c;
+	font-weight: 600;
+}
+.banquet p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 150px;
+}
+header .intro-text {
+	padding-top: 200px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+/* Banquet Section */
+#banquet {
+	padding: 10px 0 60px 0;
+	background: #f6f6f6;
+}
+#banquet h2::after {
+	bottom: 20;
+	margin-left: 0;
+	left: 10;
+}
+#banquet .banq-text {
+	padding: 80px 0;
+}
+#banquet .banq-img {
+	background: #444 url(../img/an3.jpg) center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+#banquet p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+}
+
+
+/* Meeting Section */
+#meeting {
+	padding: 10px 0 60px 0;
+	background: #f6f6f6;
+}
+#meeting h2::after {
+	bottom: 20;
+	margin-left: 0;
+	left: 10;
+}
+#meeting .meet-text {
+	padding: 80px 0;
+}
+#meeting .meet-img {
+	background: #444 url(../img/an1.jpg) center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+#meeting p {
+	line-height: 24px;
+	margin: 15px 0 30px;
+}
+/* Wedding Section */
+#wedding {
+	padding: 10px 0 60px 0;
+	background: #f6f6f6;
+}
+#wedding h2::after {
+	bottom: 20;
+	margin-left: 0;
+	left: 10;
+}
+#wedding .wedd-text {
+	padding: 80px 0;
+}
+#wedding .wedd-img {
+	background: #444 url(../img/an2.jpg) center center no-repeat;
+	background-size: cover;
+	height: 600px;
+}
+#wedding p {
+	line-height: 24px;
+	margin: 15px 0 30px;
 }

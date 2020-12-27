@@ -20,5 +20,7 @@ from .views import get_main_page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', get_main_page),
-    path('menu/', include('menu.urls'))
+    path('menu/', include('menu.urls')),
+    path('dish/', include('menu.urls')),
+    path('anons/', include('team.urls')),
 ]
