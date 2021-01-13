@@ -323,7 +323,7 @@ header .intro-text {
 	max-width: 400px
 }
 #team .anons-img {
-	padding: -20px
+	padding: 0px
 	display: inline-block;
 	position: relative;
 	height: 180px;
@@ -485,9 +485,9 @@ color: #999;
 	font-weight: 400;
 	margin-top: 150px;
 }
-header .intro-text {
-	padding-top: 200px;
-	padding-bottom: 50px;
+header .dish-text {
+	padding-top: 320px;
+	padding-bottom: 100px;
 	text-align: center;
 }
 
@@ -558,4 +558,42 @@ header .intro-text {
 #wedding p {
 	line-height: 24px;
 	margin: 15px 0 30px;
+}
+#dish .dish-img {
+	padding: 120px 0;
+	padding-left: 40px;
+	background: #444 center center no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+#dish p {
+	line-height: 28px;
+	margin: 15px 0 30px;
+}
+#messages {
+	padding: 100px 0;
+}
+#dishes {
+	padding: 100px 0;
+}
+#cats {
+	padding: 100px 0;
+}
+#messages h3 {
+	position: relative;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	color: #aaa;
+	padding: 20px 0;
+}
+#messages h3::after {
+	position: absolute;
+	content: "";
+	background: #d43031;
+	height: 2px;
+	width: 40px;
+	bottom: 0;
+	margin-left: -20px;
+	left: 50%;
 }

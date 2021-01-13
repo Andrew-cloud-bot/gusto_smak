@@ -1,10 +1,38 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from menu.models import Category, Dish
+from random import randint
+from .settings import GALLERY
+from contact_info.forms import UserMessagesForm
+
 
 def get_main_page(request):
-    category = Category.objects.all().order_by('category_order')
-    dish = Dish.objects.all().order_by('category_id')
+    specials = []
+    gallery = []
+    rnd = []
+    form = UserMessagesForm()
+
+    if request.method == 'POST':
+        form = UserMessagesForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/#contact')
+
+    categories = Category.objects.filter(is_visible=True).order_by('category_order')
+
+    for item in categories:
+        item.dishes = Dish.objects.filter(category=item.id)
+
+    dishes = Dish.objects.all()
+    for dish in dishes:
+        if dish.special:
+            specials.append(dish)
+
+    while len(set(rnd)) < GALLERY:
+        rnd.append(randint(0, len(dishes)-1))
+
+    for i in set(rnd):
+        gallery.append(dishes[i].photo.url)
 
     context = {'title': 'Кафе Смак',
                'about_title': 'Наша історія',
@@ -16,7 +44,9 @@ def get_main_page(request):
                'team_info_2':'Колекція вин ресторану «Смак» налічує близько 120 позицій. Від всесвітньо відомих винних будинків до невеликих сімейних виноробства.'
                              ' Коктейльне меню - це ще одна особливість нашого ресторану.',
                'menu_title': 'Меню',
-               'categories':category,
-               'dishes':dish
+               'specials':specials,
+               'gallery':gallery,
+               'categories':categories,
+               'form':form,
                }
     return render(request, 'index.html', context=context)

@@ -16,11 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import get_main_page
+from django.conf.urls.static import static
+from guesto_cafe import settings
+from accounts.views import register_view, login_view, logout_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/', login_view , name='login'),
+    path('logout/', logout_view , name='logout'),
+    path('register/', register_view, name='register'),
     path('', get_main_page),
-    path('menu/', include('menu.urls')),
+    path('menu/', include(('menu.urls', 'menu'))),
+    path('messages/', include(('users_messages.urls', 'users_messages'))),
     path('dish/', include('menu.urls')),
+    # path('add_category/', include('menu.urls')),
     path('anons/', include('team.urls')),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

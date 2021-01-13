@@ -46,7 +46,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="javascript:history.back()" class="page-scroll">Повернутися до меню</a></li>
+          <li><a href="#dish" class="page-scroll">{{ dish.title }}</a></li>
+          <li><a href="javascript:history.back()" class="page-scroll">Повернутися до меню</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -59,7 +60,7 @@
     <div class="overlay">
       <div class="container">
         <div class="row">
-          <div class="intro-text">
+          <div class="dish-text">
             <h2>{{ dish.category }}</h2>
             <p></p>
           </div>
@@ -72,23 +73,49 @@
 <section id=back">
 
 </section>
+
 <section id="dish">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <div class="banq-text">
-          <div class="section-title">
-            <h2>{{ dish.title }}</h2>
-          </div>
-          <p>{{ dish.info1 }}</p>
-          <p>{{ dish.info2 }}</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 dish-img">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src={{ dish.photo.url }} alt="">
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-md-offset-1">
+                <div class="about-text">
+                    <div class="section-title text-center">
+                        <h2>{{ dish.title }}</h2>
+                    </div>
+                    <p><h3>{{ dish.description }}</h3></p>
+                    <div class="text-center">
+                        <p><h4> &#8372; {{ dish.price }}</h4></p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-6 banq-img"> </div>
     </div>
-  </div>
 </section>
 {% comment %}
+<section id="dish">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-md-offset-1">
+                <div class="banq-text">
+                    <div class="section-title">
+                        <h2>{{ dish.title }}</h2>
+                    </div>
+                    <div><h3>{{ dish.description }}</h3></div>
+                    <div><h4> &#8372; {{ dish.price }}</h4></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <img src={{ dish.photo.url }} class="img-responsive" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="meeting">
   <div class="container">
     <div class="row">
