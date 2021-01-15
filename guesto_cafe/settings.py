@@ -30,13 +30,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=r=wz-y_9sos8q0e+4b2jk)k_&6kmtfvrz=p^@=vk+77gymdsg'
+#SECRET_KEY = '=r=wz-y_9sos8q0e+4b2jk)k_&6kmtfvrz=p^@=vk+77gymdsg'
 SECRET_KEY = SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['smak.herokuapp.com']
 GALLERY = 4
 
 # Application definition
