@@ -101,23 +101,14 @@ WSGI_APPLICATION = 'guesto_cafe.wsgi.application'
 #    }
 #}
 DATABASES = {
-
     'default': {
-
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': ‘<db_name>’,
-
-        'USER': '<db_username>',
-
-        'PASSWORD': '<password>',
-
-        'HOST': '<db_hostname_or_ip>',
-
-        'PORT': '<db_port>',
-
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
+        'HOST': DB_HOST,
+        'PORT': '5432',
     }
-
 }
 
 db = dj_database_url.config()
@@ -165,6 +156,4 @@ STATIC_URL = '/static/'
 #MEDIA_URL =
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
