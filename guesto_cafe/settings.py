@@ -36,7 +36,7 @@ SECRET_KEY = SECRET_KEY
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['smak.herokuapp.com']
 GALLERY = 4
 
 # Application definition
