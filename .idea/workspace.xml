@@ -2,51 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a566471a-7abc-47e4-bf6d-b565eaf5da28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/templates/anons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anons/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/anonses/1d868cb1-75cc-4a1b-bb70-e16b5facaaf7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/anonses/8f7f5d1e-59cd-4d59-9fa2-8fd8921d22e7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/anonses/9e03d80b-4325-44c7-8183-1963d0a3b624.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/anonses/bbd0cfb8-1cee-4581-8a92-ea6fc3b299c6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/anonses/e284919e-945d-4fd4-b021-83d5f006780c.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/anonses/f00f2a8f-548c-485c-909b-155fe7bece8d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/migrations/0005_anons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/templates/anons_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/templates/anons_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/templates/anons_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_guesto/templates/about_guesto.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_guesto/templates/about_guesto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guesto_cafe/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guesto_cafe/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guesto_cafe/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guesto_cafe/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guesto_cafe/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/guesto_cafe/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/templates/category_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/category_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/templates/category_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/category_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/templates/dish_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/dish_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/templates/dish_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/dish_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydata.json" beforeDir="false" afterPath="$PROJECT_DIR$/mydata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/team/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/templates/anons.html" beforeDir="false" afterPath="$PROJECT_DIR$/anons/templates/anons_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/templates/meeting-rooms.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team/templates/team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/team/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/team/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +106,7 @@
       <workItem from="1610368727625" duration="29038000" />
       <workItem from="1610468033141" duration="10822000" />
       <workItem from="1610557773097" duration="5692000" />
-      <workItem from="1610698935200" duration="31394000" />
+      <workItem from="1610698935200" duration="32266000" />
     </task>
     <task id="LOCAL-00001" summary="Menu from DB">
       <created>1609091497034</created>
