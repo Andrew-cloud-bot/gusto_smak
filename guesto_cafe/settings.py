@@ -35,9 +35,8 @@ SECRET_KEY = SECRET_KEY
 
 DEBUG = True
 
-
-#ALLOWED_HOSTS = ['smak.herokuapp.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['smak.herokuapp.com']
+#ALLOWED_HOSTS = []
 
 GALLERY = 4
 
