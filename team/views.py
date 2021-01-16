@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def get_anons_page(request):
-    context = {'title': 'Кафе Смак - Анонси',
+    context = {'title': 'Анонси Смаку',
                'banq_title': 'Вишукані блюда',
                'banq_info_1': 'Колекція вин ресторану «Смак» налічує близько 120 позицій. Від всесвітньо відомих винних будинків до невеликих сімейних виноробства.'
                               ' Коктейльне меню - це ще одна особливість нашого ресторану.',
@@ -10,5 +10,5 @@ def get_anons_page(request):
                'wedd_title': 'Незабутні враження',
                'wedd_info_1': 'Наш шеф спільно з метрдотелем можуть скласти індивідуальне меню по вашим бажанням, додавши в нього улюблені вами страви.',
                }
-    return render(request, 'anons.html', context=context)
+    return render(request, 'anons_info.html', context=context)
 # Create your views here.

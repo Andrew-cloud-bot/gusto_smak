@@ -30,7 +30,7 @@ urlpatterns = [
     path('messages/', include(('users_messages.urls', 'users_messages'))),
     path('dish/', include('menu.urls')),
     # path('add_category/', include('menu.urls')),
-    path('anons/', include('team.urls')),
+    path('anons/', include('anons.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

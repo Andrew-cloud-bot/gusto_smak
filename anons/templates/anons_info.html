@@ -10,10 +10,10 @@
     <!-- Favicons
     {% load static %}
         ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+{#    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">#}
+{#    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">#}
+{#    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">#}
+{#    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">#}
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href={% static "css/bootstrap.css" %}>
@@ -46,9 +46,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#banquet" class="page-scroll">Банкети</a></li>
-        <li><a href="#meeting" class="page-scroll">Конференції</a></li>
-        <li><a href="#wedding" class="page-scroll">Весілля</a></li>
+{#        <li><a href="#1" class="page-scroll">{{ anons.title }}</a></li>#}
+{#        <li><a href="#2" class="page-scroll">{{ anons.title }}</a></li>#}
+        <li><a href="#anons_det" class="page-scroll">{{ anons.title }}</a></li>
         <li><a href="javascript:history.back()" class="page-scroll">Повернутися до головної сторінки</a></li>
       </ul>
     </div>
@@ -75,54 +75,58 @@
 <section id=back">
 
 </section>
-<section id="banquet">
+
+<section id="anons_det">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <div class="banq-text">
+      <div class="col-xs-12 col-md-3">
+        <div class="anons-text">
           <div class="section-title">
-            <h2>{{ banq_title }}</h2>
+            <h2>{{ anons.title }}</h2>
           </div>
-          <p>{{ banq_info_1 }}</p>
-          <p>{{ about_info_1 }}</p>
+          <p>{{ anons.description }}</p>
+{#          <p>{{  }}</p>#}
         </div>
       </div>
-      <div class="col-xs-12 col-md-6 banq-img"> </div>
-    </div>
-  </div>
-</section>
-<section id="meeting">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 meet-img"> </div>
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <div class="meet-text">
-          <div class="section-title">
-            <h2>{{ meet_title }}</h2>
-          </div>
-          <p>{{ meet_info_1 }}</p>
-          <p>{{ about_info_1 }}</p>
-        </div>
+      <div class="col-xs-12 col-md-6 bg-img">
+        <img src={{ anons.photo_bg.url }}>
       </div>
     </div>
   </div>
 </section>
-<section id="wedding">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <div class="wedd-text">
-          <div class="section-title">
-            <h2>{{ wedd_title }}</h2>
-          </div>
-          <p>{{ wedd_info_1 }}</p>
-          <p>{{ about_info_1 }}</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-6 wedd-img"> </div>
-    </div>
-  </div>
-</section>
+
+{#<section id="meeting">#}
+{#  <div class="container">#}
+{#    <div class="row">#}
+{#      <div class="col-xs-12 col-md-6 meet-img"> </div>#}
+{#      <div class="col-xs-12 col-md-4 col-md-offset-1">#}
+{#        <div class="meet-text">#}
+{#          <div class="section-title">#}
+{#            <h2>{{ anonses.title }}</h2>#}
+{#          </div>#}
+{#          <p>{{ anonses.description }}</p>#}
+{#          <p>{{ about_info_1 }}</p>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</section>#}
+{#<section id="wedding">#}
+{#  <div class="container">#}
+{#    <div class="row">#}
+{#      <div class="col-xs-12 col-md-4 col-md-offset-1">#}
+{#        <div class="wedd-text">#}
+{#          <div class="section-title">#}
+{#            <h2>{{ anonses.title }}</h2>#}
+{#          </div>#}
+{#          <p>{{ anonses.description }}</p>#}
+{#          <p>{{ about_info_1 }}</p>#}
+{#        </div>#}
+{#      </div>#}
+{#      <div class="col-xs-12 col-md-6 wedd-img"> </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</section>#}
 <script type="text/javascript" src={% static "js/jquery.1.11.1.js" %}></script>
 <script type="text/javascript" src={% static "js/bootstrap.js" %}></script>
 <script type="text/javascript" src={% static "js/SmoothScroll.js" %}></script>

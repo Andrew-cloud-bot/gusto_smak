@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import Dish, Category
+from .models import Dish, Category, Anons
 from django.http import HttpResponse
-from .forms import CategoryForm, DishForm
+from .forms import CategoryForm, DishForm, AnonsForm
 from django.contrib import messages
 from django.views.generic import DetailView, DeleteView, UpdateView, CreateView
 from django.urls import reverse_lazy
@@ -67,6 +67,14 @@ def dishes(request):
     items = paginator.get_page((page))
     return render(request, 'dishes_view.html', context={'items': items})
 
+@login_required(login_url='/login/')
+@user_passes_test(is_member)
+def anons(request):
+    items = Anons.objects.all().order_by('id')
+    paginator = Paginator(items, 4)
+    page = request.GET.get('page')
+    items = paginator.get_page((page))
+    return render(request, 'anons_view.html', context={'items': items})
 
 class CategoryUpdateView(LoginRequiredMixin, GroupRequiredMixin, SuccessMessageMixin, UpdateView):
     login_url = reverse_lazy('login')
@@ -127,4 +135,34 @@ class DishDeleteView(LoginRequiredMixin, GroupRequiredMixin, SuccessMessageMixin
 
     def get(self, request, *args, **kwargs):
         messages.success(request, 'Страва успішно видалена!')
+        return self.post(request, *args, **kwargs)
+
+class AnonsUpdateView(LoginRequiredMixin, GroupRequiredMixin, SuccessMessageMixin, UpdateView):
+    login_url = reverse_lazy('login')
+    group_required = ['manager', 'admin']
+    model = Anons
+    form_class = AnonsForm
+    template_name = 'anons_update.html'
+    success_url = reverse_lazy('menu:anons')
+    success_message = 'Анонс успішно відкориговано!'
+
+
+class AnonsAddView(LoginRequiredMixin, GroupRequiredMixin, SuccessMessageMixin, CreateView):
+    login_url = reverse_lazy('login')
+    group_required = ['manager', 'admin']
+    model = Anons
+    form_class = AnonsForm
+    template_name = 'anons_add.html'
+    success_url = reverse_lazy('menu:anons')
+    success_message = 'Анонс успішно створено!'
+
+
+class AnonsDeleteView(LoginRequiredMixin, GroupRequiredMixin, SuccessMessageMixin, DeleteView):
+    login_url = reverse_lazy('login')
+    group_required = ['manager', 'admin']
+    model = Anons
+    success_url = reverse_lazy('menu:anons')
+
+    def get(self, request, *args, **kwargs):
+        messages.success(request, 'Анонс успішно видалено!')
         return self.post(request, *args, **kwargs)

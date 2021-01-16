@@ -1,5 +1,5 @@
 from django import forms
-from .models import Category, Dish
+from .models import Category, Dish, Anons
 
 
 class CategoryForm(forms.ModelForm):
@@ -29,3 +29,17 @@ class DishForm(forms.ModelForm):
     class Meta():
         model = Dish
         fields = ('title', 'price', 'category', 'photo', 'description', 'special')
+
+
+class AnonsForm(forms.ModelForm):
+    title = forms.CharField(max_length=15, widget=forms.TextInput(
+        attrs={'placeholder': 'Назва анонсу', 'required': 'required'}))
+    photo_sm = forms.ImageField(widget=forms.ClearableFileInput())
+    photo_bg = forms.ImageField(widget=forms.ClearableFileInput())
+    description = forms.CharField(max_length=300, widget=forms.Textarea(attrs={'placeholder': 'Опис анонсу'}))
+    is_visible = forms.BooleanField(required=False, widget=forms.CheckboxInput(
+        attrs={'placeholder': 'Відображати анонс'}))
+
+    class Meta():
+        model = Anons
+        fields = ('title', 'photo_sm', 'photo_bg', 'description', 'is_visible')

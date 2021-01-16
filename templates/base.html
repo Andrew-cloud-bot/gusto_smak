@@ -44,12 +44,14 @@
         <li><a href="/#about" class="page-scroll">Хто ми</a></li>
         <li><a href="/#restaurant-menu" class="page-scroll">Меню</a></li>
         <li><a href="/#team" class="page-scroll">Шеф</a></li>
+        <li><a href="/#anons" class="page-scroll">Наші анонси</a></li>
         <li><a href="/#contact" class="page-scroll">Зв'язок з нами</a></li>
       </ul>
     </div>
     {% if 'manager' in user.groups.all.0.name or user.is_staff %}
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a href="/menu/anons/#anons" class="page-scroll">Анонси</a></li>
         <li><a href="/menu/categories/#cats" class="page-scroll">Категорії</a></li>
         <li><a href="/menu/dishes/#dishes" class="page-scroll">Страви</a></li>
         <li><a href="/messages/#messages" class="page-scroll">Повідомлення</a></li>

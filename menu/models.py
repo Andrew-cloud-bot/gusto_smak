@@ -29,3 +29,20 @@ class Dish(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Anons(models.Model):
+
+    def get_file_name_anonses(self, filename):
+        ext = filename.split('.')[-1]
+        filename = f'{uuid4()}.{ext}'
+        return path.join('images/anonses/', filename)
+
+    title = models.CharField(max_length=15, unique=True)
+    photo_sm = models.ImageField(upload_to=get_file_name_anonses, null=True)
+    photo_bg = models.ImageField(upload_to=get_file_name_anonses, null=True)
+    description = models.CharField(max_length=300, null=True)
+    is_visible = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.title

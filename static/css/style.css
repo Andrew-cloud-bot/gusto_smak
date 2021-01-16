@@ -33,7 +33,7 @@ h2::after {
 h3 {
 	font-size: 30px;
 	font-weight: 400;
-	color: #333;
+	/*color: #333;*/
 }
 h4 {
 	font-size: 24px;
@@ -301,7 +301,7 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-	padding: 40px 0;
+	padding: 120px 0;
 }
 #team h2::after {
 	bottom: 0;
@@ -313,22 +313,14 @@ header .intro-text {
 	margin: 0px 0 0px;
 }
 #team img {
-	max-width: 400px;
+	max-width: 550px;
 	
 }
 #team .team-img {
 	display: inline-block;
 	position: relative;
-	height: 370px;
-	max-width: 400px
-}
-#team .anons-img {
-	padding: 0px
-	display: inline-block;
-	position: relative;
-	height: 180px;
-	max-width: 250px
-	margin: 0px auto 0px;
+	height: 570px;
+	max-width: 550px
 }
 
 /* Contact Section */
@@ -492,26 +484,65 @@ header .dish-text {
 }
 
 /* Banquet Section */
-#banquet {
-	padding: 10px 0 60px 0;
+#anons {
+	padding: 120px 0 120px 0;
 	background: #f6f6f6;
 }
-#banquet h2::after {
-	bottom: 20;
+#anons h2::after {
+/*	bottom: 20;*/
+/*	margin-left: 0;*/
+/*	left: 10;*/
+	position: absolute;
+	content: "";
+	background: #d43031;
+	height: 2px;
+	width: 70px;
+	bottom: 0;
+	margin-left: -35px;
+	left: 50%;
+}
+/*#anons h3::after {*/
+/*!*	bottom: 20;*!*/
+/*!*	margin-left: 0;*!*/
+/*!*	left: 10;*!*/
+/*	position: absolute;*/
+/*	content: "";*/
+/*	background: #d43031;*/
+/*	height: 2px;*/
+/*	width: 60px;*/
+/*	bottom: 0;*/
+/*	margin-left: -30px;*/
+/*	left: 50%;*/
+/*}*/
+#anons_det {
+	padding: 100px;
+	background: #f6f6f6;
+}
+#anons_det h2::after {
+	bottom: 0;
 	margin-left: 0;
-	left: 10;
+	left: 0;
+
+#anons_det .anons-text {
+	padding: 120px 0;
 }
-#banquet .banq-text {
-	padding: 80px 0;
-}
-#banquet .banq-img {
-	background: #444 url(../img/an3.jpg) center center no-repeat;
+#anons_det .bg-img {
+	padding: 120px;
+	background: #444 center center no-repeat;
 	background-size: cover;
-	height: 600px;
+	height: 800px;
 }
-#banquet p {
+#anons_det p {
 	line-height: 24px;
 	margin: 15px 0 30px;
+}
+#anons .anons-img {
+	padding: 20px
+	display: inline-block;
+	position: relative;
+	height: 180px;
+	max-width: 250px
+	margin: 0px auto 0px;
 }
 
 
@@ -528,8 +559,8 @@ header .dish-text {
 #meeting .meet-text {
 	padding: 80px 0;
 }
-#meeting .meet-img {
-	background: #444 url(../img/an1.jpg) center center no-repeat;
+#anons .meet-img {
+	background: #444 center center no-repeat;
 	background-size: cover;
 	height: 600px;
 }
