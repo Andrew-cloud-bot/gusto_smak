@@ -325,7 +325,7 @@ header .intro-text {
 
 /* Contact Section */
 #contact {
-	padding: 100px 0;
+	padding: 80px 0;
 	background: #333;
 }
 #contact .contact-item p {
@@ -450,7 +450,7 @@ color: #999;
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/aa.jpg) center center no-repeat;
+	background: center center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -478,14 +478,17 @@ color: #999;
 	margin-top: 150px;
 }
 header .dish-text {
-	padding-top: 320px;
+	padding-top: 120px;
 	padding-bottom: 100px;
 	text-align: center;
 }
 
-/* Banquet Section */
+/* Anons Section */
 #anons {
-	padding: 120px 0 120px 0;
+	padding-top: 120px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 200px;
 	background: #f6f6f6;
 }
 #anons h2::after {
@@ -501,19 +504,6 @@ header .dish-text {
 	margin-left: -35px;
 	left: 50%;
 }
-/*#anons h3::after {*/
-/*!*	bottom: 20;*!*/
-/*!*	margin-left: 0;*!*/
-/*!*	left: 10;*!*/
-/*	position: absolute;*/
-/*	content: "";*/
-/*	background: #d43031;*/
-/*	height: 2px;*/
-/*	width: 60px;*/
-/*	bottom: 0;*/
-/*	margin-left: -30px;*/
-/*	left: 50%;*/
-/*}*/
 #anons_det {
 	padding: 100px;
 	background: #f6f6f6;
@@ -544,72 +534,31 @@ header .dish-text {
 	max-width: 250px
 	margin: 0px auto 0px;
 }
-
-
-/* Meeting Section */
-#meeting {
-	padding: 10px 0 60px 0;
-	background: #f6f6f6;
+#anons .menu-section {
+	margin: 0 20px 80px;
 }
-#meeting h2::after {
-	bottom: 20;
-	margin-left: 0;
-	left: 10;
+#anons .menu-section-title {
+	font-size: 32px;
+	display: block;
+	font-weight: 400;
+	color: #444;
+	margin: 20px 0;
+	text-align: center;
 }
-#meeting .meet-text {
-	padding: 80px 0;
+#anons h3::after {
+/*	bottom: 20;*/
+/*	margin-left: 0;*/
+/*	left: 10;*/
+	position: absolute;
+	content: "";
+	background: #d43031;
+	height: 2px;
+	width: 60px;
+	bottom: 0;
+	margin-left: -30px;
+	left: 50%;
 }
-#anons .meet-img {
-	background: #444 center center no-repeat;
-	background-size: cover;
-	height: 600px;
-}
-#meeting p {
-	line-height: 24px;
-	margin: 15px 0 30px;
-}
-/* Wedding Section */
-#wedding {
-	padding: 10px 0 60px 0;
-	background: #f6f6f6;
-}
-#wedding h2::after {
-	bottom: 20;
-	margin-left: 0;
-	left: 10;
-}
-#wedding .wedd-text {
-	padding: 80px 0;
-}
-#wedding .wedd-img {
-	background: #444 url(../img/an2.jpg) center center no-repeat;
-	background-size: cover;
-	height: 600px;
-}
-#wedding p {
-	line-height: 24px;
-	margin: 15px 0 30px;
-}
-#dish .dish-img {
-	padding: 120px 0;
-	padding-left: 40px;
-	background: #444 center center no-repeat;
-	background-size: cover;
-	height: 650px;
-}
-#dish p {
-	line-height: 28px;
-	margin: 15px 0 30px;
-}
-#messages {
-	padding: 100px 0;
-}
-#dishes {
-	padding: 100px 0;
-}
-#cats {
-	padding: 100px 0;
-}
+/*Messages Section*/
 #messages h3 {
 	position: relative;
 	text-transform: uppercase;
@@ -628,3 +577,62 @@ header .dish-text {
 	margin-left: -20px;
 	left: 50%;
 }
+#messages {
+	padding: 120px 0 10px 0;
+#messages {
+	padding: 120px 0 10px 0;
+#messages {
+	padding: 120px 0 10px 0;
+
+
+
+/* Dish section*/
+#back {
+	padding: 20px 0 20px;
+	background: #f6f6f6;
+}
+}
+#dish {
+	padding: 0px 0 0px;
+	background: #f6f6f6;
+}
+#dish .about-text {
+	padding: 10px 0 10px;
+}
+#dish .dish-img {
+	padding: 100px 0;
+	padding-left: 30px;
+	background: #444 center center no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+#dish p {
+	padding: 10px 0;
+	line-height: 28px;
+	margin: 15px 0 30px;
+}
+#dish h2 {
+	font-weight: 400;
+	font-size: 38px;
+	color: #333;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#dish h2::after {
+	position: absolute;
+	content: "";
+	background: #d43031;
+	height: 2px;
+	width: 70px;
+	bottom: 0;
+	margin-left: -35px;
+	left: 50%;
+}
+
+
+

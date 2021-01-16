@@ -1,4 +1,4 @@
-<section class="text-center" id="anons">
+<section id="anons" class="text-center">
     <div class="container">
         <div class="section-title">
             <h2>Наші анонси</h2>
@@ -6,10 +6,12 @@
         <div class="row">
             {% for anons in anonses %}
             <div class="col-xxs-12 col-xs-6  col-sm-4">
-                <div class="features-item">
-                    <h3><a href="/anons/{{ anons.id }}/#anons_det">{{ anons.title }}</a></h3>
-                    <img src={{ anons.photo_sm.url }} class="img-responsive" alt="">
-{#                    <p>{{ anons.description }}</p>#}
+                <div class="menu-section">
+                    {#<div class="features-item">#}
+                    <h3 class="menu-section-title"><a href="/anons/{{ anons.id }}/#anons_det">{{ anons.title }}</a></h3>
+                    <div class="menu-section">
+                        <img src={{ anons.photo_sm.url }} class="img-responsive" alt="">
+                    </div>
                 </div>
             </div>
             {% endfor %}
@@ -17,29 +19,3 @@
     </div>
 </section>
 
-
-
-
-{#<section id=""> #}
-{#     <div class="row text-center">#}
-{#        <div class="col-xxs-12 col-xs-6  col-sm-4">#}
-{#            <a href="/anons#anons1">#}
-{#                <h3>Банкети</h3>#}
-{#                <div class="anons-img"><img src={% static "img/an1s.jpg" %} class="img-responsive" alt="..."></div>#}
-{#            </a>#}
-{#        </div>#}
-{#        <div class="col-xxs-12 col-xs-6  col-sm-4">#}
-{#            <a href="/anons#anons2">#}
-{#                <h3>Конференції</h3>#}
-{#                <div class="anons-img"><img src={% static "img/an2s.jpg" %} class="img-responsive" alt="..."></div>#}
-{#            </a>#}
-{#        </div>#}
-{#        <div class="col-xxs-12 col-xs-6  col-sm-4">#}
-{#            <a href="/anons#anons3">#}
-{#                <h3>Весілля</h3>#}
-{#                <div class="anons-img"><img src={% static "img/an3s.jpg" %} class="img-responsive" alt="..."></div>#}
-{#            </a>#}
-{#        </div>#}
-{#    </div>#}
-{#  </div>#}
-{#</section>#}

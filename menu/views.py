@@ -52,7 +52,7 @@ def is_member(user):
 @user_passes_test(is_member)
 def categories(request):
     items = Category.objects.all().order_by('category_order')
-    paginator = Paginator(items, 4)
+    paginator = Paginator(items, 3)
     page = request.GET.get('page')
     items = paginator.get_page((page))
     return render(request, 'categories_view.html/', context={'items': items})
@@ -62,7 +62,7 @@ def categories(request):
 @user_passes_test(is_member)
 def dishes(request):
     items = Dish.objects.all().order_by('category_id')
-    paginator = Paginator(items, 4)
+    paginator = Paginator(items, 3)
     page = request.GET.get('page')
     items = paginator.get_page((page))
     return render(request, 'dishes_view.html', context={'items': items})
@@ -71,7 +71,7 @@ def dishes(request):
 @user_passes_test(is_member)
 def anons(request):
     items = Anons.objects.all().order_by('id')
-    paginator = Paginator(items, 4)
+    paginator = Paginator(items, 3)
     page = request.GET.get('page')
     items = paginator.get_page((page))
     return render(request, 'anons_view.html', context={'items': items})
