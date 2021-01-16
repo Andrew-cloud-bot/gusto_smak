@@ -4,7 +4,6 @@
     <list default="true" id="a566471a-7abc-47e4-bf6d-b565eaf5da28" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guesto_cafe/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guesto_cafe/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydata.json" beforeDir="false" afterPath="$PROJECT_DIR$/mydata.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +105,7 @@
       <workItem from="1610368727625" duration="29038000" />
       <workItem from="1610468033141" duration="10822000" />
       <workItem from="1610557773097" duration="5692000" />
-      <workItem from="1610698935200" duration="32266000" />
+      <workItem from="1610698935200" duration="33587000" />
     </task>
     <task id="LOCAL-00001" summary="Menu from DB">
       <created>1609091497034</created>
