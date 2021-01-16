@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'guesto_cafe.wsgi.application'
 #       'NAME': BASE_DIR / 'db.sqlite3',
 #   }
 #}
- DATABASES = {
+DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.postgresql',
          'NAME': DB_NAME,
