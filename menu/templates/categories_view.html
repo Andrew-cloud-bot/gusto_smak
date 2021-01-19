@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section id="cats">
+<section id="cats" style="padding-top: 100px;padding-right: 0;padding-left: 0;padding-bottom: 120px;background: #f6f6f6;">
     <div class="container">
         <div class="section-title text-center">
             <h2>Категорії</h2>
@@ -10,7 +10,7 @@
             {% for item in items %}
             <div class="row">
                 <div class="col-md-3">
-                    <a href='{% url "menu:categories_update" pk=item.pk%}'>
+                    <a href='{% url "menu:categories_update" pk=item.pk%}#cat_upd'>
                         <button type="button" class="btn btn-primary btn-sm">Оновити</button>
                     </a>
                 </div>
@@ -25,7 +25,7 @@
             {% endfor %}
             <div class="row">
                 <div class='col-md-6 centered'>
-                     <a href='{% url "menu:categories_add" %}'>
+                     <a href='{% url "menu:categories_add" %}#cat_add'>
                         <button type="button" class="btn btn-primary btn-sm">
                             Додати нову категорію
                         </button>

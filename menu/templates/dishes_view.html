@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section id="dishes">
+<section id="dishes" style="padding-top: 100px;padding-right: 0;padding-left: 0;padding-bottom: 120px;background: #f6f6f6;">
     <div class="container">
         <div class="section-title text-center">
             <h2>Страви</h2>
@@ -10,13 +10,13 @@
             {% for item in items %}
             <div class="row">
                 <div class="col-md-3">
-                    <a href='{% url "menu:dishes_update" pk=item.pk%}'>
+                    <a href='{% url "menu:dishes_update" pk=item.pk%}#dish_upd'>
                         <button type="button" class="btn btn-primary btn-sm">Оновити</button>
                     </a>
                 </div>
                 <div class="col-md-6 section-title text-center">{{ item.title }}</div>
                 <div class="col-md-3">
-                    <a href='{% url "menu:dishes_delete" pk=item.pk%}'>
+                    <a href='{% url "menu:dishes_delete" pk=item.pk %}'>
                         <button type="button" class="btn btn-primary btn-sm">Видалити</button>
                     </a>
                 </div>
@@ -25,7 +25,7 @@
             {% endfor %}
             <div class="row">
                 <div class='col-md-6 centered'>
-                     <a href='{% url "menu:dishes_add" %}'>
+                     <a href='{% url "menu:dishes_add" %}#dish_add'>
                         <button type="button" class="btn btn-primary btn-sm">
                             Додати нову страву
                         </button>

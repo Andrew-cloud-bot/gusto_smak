@@ -3,8 +3,8 @@ from .views import *
 
 urlpatterns = [
     path('<int:dish_id>/', get_dish_page),
-    path('add_category/', add_category, name='add_category'),
-    path('add_dish/', add_dish, name='add_dish'),
+    # path('add_category/', add_category, name='add_category'),
+    # path('add_dish/', add_dish, name='add_dish'),
     path('<int:dish_id>/', get_dish_page),
 
     path('categories/', categories, name='categories'),

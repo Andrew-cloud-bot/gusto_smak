@@ -1,7 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a566471a-7abc-47e4-bf6d-b565eaf5da28" name="Default Changelist" comment="" />
+    <list default="true" id="a566471a-7abc-47e4-bf6d-b565eaf5da28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/guesto_cafe/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guesto_cafe/settings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guesto_cafe/settings/production.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/03fad808-a08e-4dea-bfe7-84efae01e00a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/0877f9b1-91d4-43de-aaf5-738b7d612579.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/4717d781-5dac-4dcc-ab29-7fc602b77bb8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/6a7f789e-fc6c-4500-b935-622d4524ee6d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/6adffa1b-53c2-48e7-a049-cd0e752ce692.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/7bba9bd5-f7a8-431b-851f-4bda26b523d0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/8329aa02-9c95-42b1-9d19-086ea536d746.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/8536f1da-4c40-4176-9947-16107fc8914b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/cefaa6f0-600f-4500-a10f-56907975b7f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/anonses/d1b182a6-3c6b-4694-b35c-aa9c9676c340.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/dishes/f7815324-a7be-44d9-98cf-8c1dc359de23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/bg_dish.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/400.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about_guesto/templates/about_guesto.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_guesto/templates/about_guesto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anons/templates/anons_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/anons/templates/anons_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guesto_cafe/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/guesto_cafe/settings/local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guesto_cafe/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guesto_cafe/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/anons_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/anons_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/anons_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/anons_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/anons_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/anons_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/categories_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/categories_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/category_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/category_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/category_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/category_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/dish.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/dish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/dish_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/dish_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/dish_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/dish_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/dishes_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/templates/dishes_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/an1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/an1s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/an2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/an2s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/an3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/an3s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/kyiv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/losos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/specials/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/specials/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/specials/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/an1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/an1s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/an2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/an2s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/an3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/an3s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/gallery/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/gallery/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/gallery/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/gallery/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/gallery/kyiv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/gallery/losos.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/specials/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/specials/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/img/specials/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users_messages/templates/messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/users_messages/templates/messages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vim.exe.stackdump" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +102,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -45,11 +119,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/anons/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/guesto_cafe/settings" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\guesto_cafe\guesto_cafe\settings" />
       <recent name="D:\guesto_cafe\anons\templates" />
       <recent name="D:\guesto_cafe\about_guesto" />
     </key>
@@ -116,7 +191,9 @@
       <workItem from="1610368727625" duration="29038000" />
       <workItem from="1610468033141" duration="10822000" />
       <workItem from="1610557773097" duration="5692000" />
-      <workItem from="1610698935200" duration="52892000" />
+      <workItem from="1610698935200" duration="66659000" />
+      <workItem from="1610957982093" duration="12832000" />
+      <workItem from="1611048198071" duration="20277000" />
     </task>
     <task id="LOCAL-00001" summary="Menu from DB">
       <created>1609091497034</created>
@@ -125,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609091497034</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Menu from DB">
+      <created>1610819036970</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610819036971</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,15 +238,23 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/anons/views.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/guesto_cafe/urls.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
         <watch expression="anons" language="Python" />
+        <watch expression="BASE_DIR" language="Python" />
         <watch expression="anons_list" language="Python" />
       </configuration>
     </watches-manager>

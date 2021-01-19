@@ -110,7 +110,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .on {
 	background-color: #262626 !important;
-	padding: 0 !important;
+	/*padding: 0 !important;*/
 	padding: 10px 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -226,7 +226,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 0;
+	padding: 20px 0;
 	background: #f6f6f6;
 }
 #about h2::after {
@@ -240,7 +240,7 @@ header .intro-text {
 #about .about-img {
 	background: #444 url(../img/gallery-bg.jpg) center center no-repeat;
 	background-size: cover;
-	height: 570px;
+	height: 600px;
 }
 #about p {
 	line-height: 24px;
@@ -311,10 +311,6 @@ header .intro-text {
 #team p {
 	line-height: 24px;
 	margin: 0px 0 0px;
-}
-#team img {
-	max-width: 550px;
-	
 }
 #team .team-img {
 	display: inline-block;
@@ -444,51 +440,12 @@ color: #999;
 #footer a:hover {
 	color: #eee;
 }
-
-/* Banquet Header Section */
-.banquet {
-	display: table;
-	width: 100%;
-	padding: 0;
-	background: center center no-repeat;
-	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
-.banquet .overlay {
-	background: rgba(0,0,0,0.4);
-}
-.banquet h1 {
-	font-family: 'Rochester', cursive;
-	color: #fff;
-	font-size: 10em;
-	font-weight: 400;
-	margin-top: 0;
-}
-.banquet span {
-	color: #a7c44c;
-	font-weight: 600;
-}
-.banquet p {
-	color: #fff;
-	font-size: 24px;
-	font-weight: 400;
-	margin-top: 150px;
-}
-header .dish-text {
-	padding-top: 120px;
-	padding-bottom: 100px;
-	text-align: center;
-}
-
 /* Anons Section */
 #anons {
 	padding-top: 120px;
 	padding-right: 0;
 	padding-left: 0;
-	padding-bottom: 200px;
+	padding-bottom: 220px;
 	background: #f6f6f6;
 }
 #anons h2::after {
@@ -531,7 +488,7 @@ header .dish-text {
 	display: inline-block;
 	position: relative;
 	height: 180px;
-	max-width: 250px
+	max-width: 250px;
 	margin: 0px auto 0px;
 }
 #anons .menu-section {
@@ -559,6 +516,13 @@ header .dish-text {
 	left: 50%;
 }
 /*Messages Section*/
+#messages {
+	padding-top: 120px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 220px;
+	background: #f6f6f6;
+}
 #messages h3 {
 	position: relative;
 	text-transform: uppercase;
@@ -577,35 +541,59 @@ header .dish-text {
 	margin-left: -20px;
 	left: 50%;
 }
-#messages {
-	padding: 120px 0 10px 0;
-#messages {
-	padding: 120px 0 10px 0;
-#messages {
-	padding: 120px 0 10px 0;
-
-
-
+/* Dishes_manager Section */
+#dishes {
+	padding-top: 120px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 220px;
+	background: #f6f6f6;
+}
+/* Cats_manager Section */
+#cats {
+	padding-top: 120px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 220px;
+	background: #f6f6f6;
+}
 /* Dish section*/
 #back {
-	padding: 20px 0 20px;
-	background: #f6f6f6;
-}
+	background: #262626;
+	padding: 40px 0 20px 0;
 }
 #dish {
-	padding: 0px 0 0px;
-	background: #f6f6f6;
+	padding: 220px; 				/* Поля вокруг текста */
+	background: #f6f6f6; 			/* Цвет фона */
+    /*border-top: 5px solid #000; 	!* Параметры верхней линии *!*/
+    /*border-bottom: 5px solid #000; 	!* Параметры нижней линии *!*/
+}
+#dish .dish-text {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
 }
 #dish .about-text {
-	padding: 10px 0 10px;
+	padding: 100px 0;
 }
 #dish .dish-img {
-	padding: 100px 0;
-	padding-left: 30px;
+	background: #444 url(../img/gallery-bg.jpg) center center no-repeat;
+	background-size: contain;
+	height: 600px;
+}
+#dish .bg-img {
+	padding: 120px;
 	background: #444 center center no-repeat;
 	background-size: cover;
-	height: 650px;
+	height: 800px;
 }
+
+/*#dish .dish-img {*/
+/*	display: inline-block;*/
+/*	position: relative;*/
+/*	height: 570px;*/
+/*	max-width: 550px*/
+/*}*/
 #dish p {
 	padding: 10px 0;
 	line-height: 28px;
@@ -617,7 +605,7 @@ header .dish-text {
 	color: #333;
 	text-transform: uppercase;
 	position: relative;
-	margin-top: 30px;
+	margin-top: 15px;
 	margin-bottom: 15px;
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -633,6 +621,10 @@ header .dish-text {
 	margin-left: -35px;
 	left: 50%;
 }
-
-
-
+#dish_upd {
+	padding-top: 120px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 220px;
+	background: #f6f6f6;
+}

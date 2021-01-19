@@ -1,1 +1,7 @@
 setting.py
+local.py
+__pycache__/
+.idea/
+.venv/
+.git/
+db.sqlite3

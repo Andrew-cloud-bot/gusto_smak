@@ -10,11 +10,12 @@
             {% for item in items %}
             <div class="row">
                 <div class="col-md-3">
-                    <a href='{% url "menu:anons_update" pk=item.pk%}'>
+                    <a href='{% url "menu:anons_update" pk=item.pk%}#anons_upd'>
                         <button type="button" class="btn btn-primary btn-sm">Оновити</button>
                     </a>
                 </div>
-                <div class="col-md-6 section-title text-center">{{ item.title }}</div>
+                <div class="col-md-4 section-title text-center">{{ item.title }}</div>
+                <div class="col-md-2 section-title text-center">{{ item.id }}</div>
                 <div class="col-md-3">
                     <a href='{% url "menu:anons_delete" pk=item.pk%}'>
                         <button type="button" class="btn btn-primary btn-sm">Видалити</button>
@@ -25,7 +26,7 @@
             {% endfor %}
             <div class="row">
                 <div class='col-md-6 centered'>
-                     <a href='{% url "menu:anons_add" %}'>
+                     <a href='{% url "menu:anons_add" %}#anons_add'>
                         <button type="button" class="btn btn-primary btn-sm">
                             Додати новий анонс
                         </button>

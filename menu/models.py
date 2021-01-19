@@ -23,8 +23,8 @@ class Dish(models.Model):
     title = models.CharField(max_length=25, unique=True)
     price = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    photo = models.ImageField(upload_to=get_file_name_dishes, null=True)
-    description = models.CharField(max_length=300, null=True)
+    photo = models.ImageField(upload_to=get_file_name_dishes)
+    description = models.CharField(max_length=300)
     special = models.BooleanField(default=False)
 
     def __str__(self):
@@ -39,9 +39,9 @@ class Anons(models.Model):
         return path.join('images/anonses/', filename)
 
     title = models.CharField(max_length=15, unique=True)
-    photo_sm = models.ImageField(upload_to=get_file_name_anonses, null=True)
-    photo_bg = models.ImageField(upload_to=get_file_name_anonses, null=True)
-    description = models.CharField(max_length=300, null=True)
+    photo_sm = models.ImageField(upload_to=get_file_name_anonses)
+    photo_bg = models.ImageField(upload_to=get_file_name_anonses)
+    description = models.CharField(max_length=300)
     is_visible = models.BooleanField(default=False)
 
     def __str__(self):

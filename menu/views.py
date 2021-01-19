@@ -22,27 +22,27 @@ def get_dish_page(request, dish_id):
     return render(request, 'dish.html', context=context)
 
 
-def add_category(request):
-    if request.method == 'POST':
-        form = CategoryForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponse('<h1>Category addition success</h1>')
-    else:
-        form = CategoryForm()
-        return render(request, 'add_category.html', context={'form': form})
-
-
-def add_dish(request):
-    if request.method == 'POST':
-        form = DishForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return HttpResponse('<h1>Dish addition success</h1>')
-    else:
-        form = DishForm()
-        return render(request, 'add_dish.html', context={'form': form})
-
+# def add_category(request):
+#     if request.method == 'POST':
+#         form = CategoryForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             return HttpResponse('<h1>Category addition success</h1>')
+#     else:
+#         form = CategoryForm()
+#         return render(request, 'add_category.html', context={'form': form})
+#
+#
+# def add_dish(request):
+#     if request.method == 'POST':
+#         form = DishForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save()
+#             return HttpResponse('<h1>Dish addition success</h1>')
+#     else:
+#         form = DishForm()
+#         return render(request, 'add_dish.html', context={'form': form})
+#
 
 def is_member(user):
     return user.groups.filter(name='manager').exists() or user.is_staff
@@ -52,7 +52,7 @@ def is_member(user):
 @user_passes_test(is_member)
 def categories(request):
     items = Category.objects.all().order_by('category_order')
-    paginator = Paginator(items, 3)
+    paginator = Paginator(items, 4)
     page = request.GET.get('page')
     items = paginator.get_page((page))
     return render(request, 'categories_view.html/', context={'items': items})
@@ -62,7 +62,7 @@ def categories(request):
 @user_passes_test(is_member)
 def dishes(request):
     items = Dish.objects.all().order_by('category_id')
-    paginator = Paginator(items, 3)
+    paginator = Paginator(items, 4)
     page = request.GET.get('page')
     items = paginator.get_page((page))
     return render(request, 'dishes_view.html', context={'items': items})
