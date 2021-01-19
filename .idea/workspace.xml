@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a566471a-7abc-47e4-bf6d-b565eaf5da28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vim.exe.stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guesto_cafe/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/guesto_cafe/settings/local.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -122,7 +122,7 @@
       <workItem from="1610557773097" duration="5692000" />
       <workItem from="1610698935200" duration="66659000" />
       <workItem from="1610957982093" duration="12832000" />
-      <workItem from="1611048198071" duration="20772000" />
+      <workItem from="1611048198071" duration="21427000" />
     </task>
     <task id="LOCAL-00001" summary="Menu from DB">
       <created>1609091497034</created>
